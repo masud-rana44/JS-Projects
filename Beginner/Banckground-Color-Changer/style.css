@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background-color: red;
+}
+
+.header {
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center;
+
+  padding: 40px 30px;
+}
+
+.btn {
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  width: 180px;
+  height: 35px;
+  margin: 140px 42vw;
+  cursor: pointer;
+}

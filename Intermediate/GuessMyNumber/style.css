@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  width: 100%;
+  max-height: 100vh;
+  background: #222;
+  color: #eee;
+}
+
+.header {
+  position: relative;
+  border-bottom: 0.7rem solid #eee;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.6rem;
+}
+
+.btn {
+  border: 0;
+  outline: none;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  font-family: inherit;
+  color: #232323;
+  background: #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #ccc;
+}
+
+.text {
+  font-size: 1.4rem;
+}
+
+.heading {
+  font-size: 4rem;
+  margin-bottom: 6.6rem;
+}
+
+.hiddenNum {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 6rem;
+  color: #2b2b2b;
+  background: #eee;
+  padding: 3rem 4.5rem;
+}
+
+.main {
+  padding: 11.5rem 21.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__left {
+  text-align: center;
+}
+
+.main__left .guessNumber {
+  display: block;
+  width: 25rem;
+  height: 11rem;
+  display: block;
+  background: transparent;
+  border: 0.4rem solid #eee;
+  font-size: 4.8rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #eee;
+  margin-bottom: 3rem;
+}
+
+.main__right {
+  width: 40.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main__right p {
+  font-size: 2rem;
+}
+
+.u-margin-bottom {
+  margin-bottom: 2rem !important;
+}

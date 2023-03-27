@@ -1,0 +1,156 @@
+:root {
+  --primary: #3dcfd3;
+  --dark: #161616;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #f2f2f2;
+  --secondary: #070606;
+}
+
+.u-margin-top-medium {
+  margin-top: 2.4rem !important;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.color-white {
+  color: var(--pure) !important;
+}
+
+.container {
+  max-width: 93rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem 3.6rem;
+  color: var(--dark);
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.btn--fill {
+  background-color: var(--primary);
+}
+
+.btn--fill:hover {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn--transperent {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn--transperent:hover {
+  background-color: var(--primary);
+  border-color: transparent;
+  color: var(--dark);
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.section-description {
+  font-size: 1.3rem;
+  color: var(--ternary);
+  margin-top: 0.4rem;
+  font-family: "Lato", sans-serif;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  padding: 8rem 3rem 4rem 3rem;
+  background-color: var(--pure);
+}
+
+.card__icon-box {
+  width: 9rem;
+  height: 9rem;
+  background-color: var(--primary);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__icon-box i {
+  font-size: 3rem;
+}
+
+.card__heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: -1rem;
+  margin-bottom: 0.6rem;
+}
+
+.card__details {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: var(--ternary);
+  font-family: "Lato", sans-serif;
+}
+
+.blog {
+  background-color: var(--pure);
+}
+
+.blog__img {
+  width: 100%;
+}
+
+.blog__details {
+  padding: 2rem;
+}
+
+.blog__title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.blog__title:hover {
+  color: var(--primary);
+}
+
+.blog__date {
+  margin-top: 0.2rem;
+  color: var(--ternary);
+  font-family: "Lato", sans-serif;
+}
+
+.blog__text {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin: 1.4rem 0;
+  color: var(--ternary);
+  font-family: "Lato", sans-serif;
+}
+
+.blog__link:link,
+.blog__link:visited {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--dark);
+  transition: all 0.1s ease;
+}
+
+.blog__link:hover,
+.blog__link:active {
+  color: var(--primary);
+}

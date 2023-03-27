@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rnadom Joke Generator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <span class="emoji">😂</span>
+      <p id="joke"></p>
+      <button class="btn">Get Random Joke</button>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: orange;
+        font-family: "Lato", sans-serif;
+      }
+
+      .wrapper {
+        max-width: 50rem;
+        /* height: 35rem; */
+        /* width: auto; */
+        padding: 6rem;
+        background-color: #333;
+        border-radius: 5px;
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      .emoji {
+        font-size: 8rem;
+      }
+
+      #joke {
+        font-size: 1.8rem;
+        color: #bababa;
+        padding: 2rem 0;
+      }
+
+      .btn {
+        font-family: inherit;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: 0.7rem 2rem;
+        background-color: orange;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      }
+
+      .btn:focus {
+        outline: none;
+      }
+    </style>
+
+    <script>
+      const jokeContainer = document.querySelector("#joke");
+      const btn = document.querySelector(".btn");
+
+      const getJoke = function () {
+        fetch(`https://v2.jokeapi.dev/joke/Programming,Dark?type=single`)
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            jokeContainer.innerHTML = `${data.joke}`;
+          });
+      };
+
+      btn.addEventListener("click", () => getJoke());
+    </script>
+  </body>
+</html>
